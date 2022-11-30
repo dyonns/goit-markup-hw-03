@@ -19,6 +19,11 @@
 
 }
 
+p, ul, h1, h2, h3{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
 body {
     color: var(--primary-text-color);
     background-color: var(--primary-bg-color);
@@ -35,7 +40,29 @@ body {
     text-decoration: none;
 }
 
+
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
     /* Header */
+
+.header-section {
+    padding-bottom: 25px;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
 .logo {
     color: var(--title-text-color);
     font-weight: 700;
@@ -47,14 +74,20 @@ body {
     color: var(--accent-color);
 }
 
-.nav-link, .contact {
+.nav, .contact{
+    display: flex;
+    text-align: flex-start;
+}
+
+.nav-link, .nav-contact {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+    margin-right: 50px;
 }
 
-.contact{
+.nav-contact{
     color: var(--primary-text-color);
 }
 
@@ -67,8 +100,8 @@ body {
     color: var(--accent-color);
 }
 
-.contact:hover,
-.contact:focus {
+.nav-contact:hover,
+.nav-contact:focus {
     color: var(--accent-color);
 }
 
@@ -77,6 +110,10 @@ body {
 /* Hero */
 .hero {
     background-color: var(--secondary-bg-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 280px;
+    margin-bottom: 94px;
 }
 
 .hero-title {
@@ -84,9 +121,10 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
+
 }
 
 /* Button*/
@@ -94,18 +132,21 @@ body {
 .button {
     color: var(--title-text-color);
     background-color: var(--primary-bg-color);
+    border-color: transparent;
     font-family: inherit;
     text-align: center;
     cursor: pointer;
+    border-radius: 4px;
+    display: inline-block;
 }
 
 .button.primery-button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.06em;
+    padding: 10px 32px;
+    min-width: 216px;
 }
 
 .button.secondary-button {
@@ -113,7 +154,8 @@ body {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;   
+    line-height: 1.62;  
+    padding: 6px 22px;
 }
 
 .button:hover,
@@ -122,6 +164,7 @@ body {
     color: var(--primary-bg-color);
 }
 
+
 /* Sections Title */
 
 .section-title {
@@ -129,26 +172,63 @@ body {
     font-size: 36px;
     line-height: 1.27;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
+
 
 /* Features */
 
+.hide {
+    display: none;
+}
+
+.feature {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 94px;
+    gap: 30px;
+}
 .feature-title {
     color: var(--title-text-color);
     line-height: 1.14;
     text-transform: uppercase;
     font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .feature-text {
     line-height: 1.71;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
+/* Activity */
+
+.activity {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 94px;
+}
 
 /* Team */
 
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
 .team-section{
     background-color: var(--secondary-button-color);
+    padding: 94px 215px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.team-photo{
+    margin-bottom: 30px;
 }
 
 .team-name {
@@ -156,17 +236,24 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .team-position {
     font-size: 16px;
     line-height: 1.18;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 /* Footer */
 
 .footer {
     background-color: var(--secondary-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 200px;
 }
 
 .logo-fr {
@@ -175,6 +262,8 @@ body {
     font-size: 26px;
     line-height: 1.2;
     font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .address-map {
