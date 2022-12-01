@@ -69,12 +69,20 @@ body {
 
 }
 
+.section {
+    padding-top: 95px;
+    padding-bottom: 94px;
+}
+
     /* Header */
+
+header {
+    border-bottom: 1px solid #ECECEC;
+}
 
 .header-section {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .nav{display: flex;}
@@ -171,7 +179,6 @@ body {
 
 .button {
     color: var(--title-text-color);
-    background-color: var(--primary-bg-color);
     border-color: transparent;
     font-family: inherit;
     text-align: center;
@@ -181,6 +188,8 @@ body {
 }
 
 .button.primery-button {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -237,8 +246,6 @@ body {
 .feature {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
     gap: 30px;
 }
 .feature-title {
@@ -270,10 +277,15 @@ body {
     gap: 30px;
 
 }
+
 .team-section{
     background-color: var(--secondary-button-color);
-    padding-bottom: 94px;
-    padding-top: 94px;
+}
+
+.team-content {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-photo{
@@ -343,11 +355,6 @@ body {
 
 /* Portfolio*/
 
-.portfolio-main-section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .portfolio-button {
     display: flex;
     justify-content: center;
@@ -365,9 +372,11 @@ body {
     flex-wrap: wrap;
 }
 
-.portfolio-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+.portfolio-menu {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
 }
 
 .portfolio-section {
@@ -394,8 +403,8 @@ body {
 }
 
 .portfolio-name {
-    margin-top: 20px;
-    margin-bottom: 4px;       
+    padding-top: 20px;
+    padding-bottom: 4px;       
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2;
