@@ -74,9 +74,12 @@ body {
 .header-section {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 
-.nav,
+.nav{display: flex;}
+
+.nav-nav,
 .contact {
     display: flex;
     padding-bottom: 32px;
@@ -339,6 +342,11 @@ body {
 }
 
 /* Portfolio*/
+
+.portfolio-main-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .portfolio-button {
     display: flex;
